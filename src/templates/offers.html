@@ -1,0 +1,52 @@
+{% load staticfiles %}
+{% load thumbnail %}
+
+<div class="row">
+
+    {% for instance in offers %}
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+              <div class="thumbnail">
+                  {% thumbnail instance.picture "420x250" as im %}
+                    <img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}">
+                  {% endthumbnail %}
+              </div>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="#">{{ instance.product }}</a>
+                  </h4>
+                  <h5>${{ instance.price }}</h5>
+                  <p class="card-text">{{ instance.comment }}</p>
+                </div>
+                <div class="card-footer">
+                    <div class="ratings">
+                        <p class="pull-right">{{instance.reviews}} reviews</p>
+                        <p>
+                            {% if instance.stars == 1 %}
+                                <small class="text-muted">&#9733; &#9734; &#9734; &#9734; &#9734;</small>
+
+                            {% elif instance.stars == 2 %}
+                                <small class="text-muted">&#9733; &#9733; &#9734; &#9734; &#9734;</small>
+
+                            {% elif instance.stars == 3 %}
+                                <small class="text-muted">&#9733; &#9733; &#9733; &#9734; &#9734;</small>
+
+                            {% elif instance.stars == 4 %}
+                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+
+                            {% elif instance.stars == 5 %}
+                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</small>
+                            {% endif %}
+                        </p>
+                    </div>
+                </div>
+          </div>
+        </div>
+
+   {% endfor %}
+</div>
+<!-- /.row -->
+
+
+
