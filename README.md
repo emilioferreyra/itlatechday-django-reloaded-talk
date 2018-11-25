@@ -1,5 +1,5 @@
 # itlatechday-django-reloaded-talk
-Repository de Django Reloaded Talk y la app de ejmplo Django-Mobile-Shop
+Repositorio de la charla "Django Reloaded" impartida en el Itla-TechDay.  Incluye la app de ejemplo Django-Mobile-Shop
 
 # Django Mobile Shop
 **DMS** es un proyecto de ejemplo para fines puramente educativos, implementado en la charla **"Django Reloaded"** con el objetivo de dar a conocer las virtudes del framework web más popular dentro del mundo Python.
