@@ -33,10 +33,10 @@ virtualenv
 source bin/activate
 ```
 
-5. Instalar las librerias usando pip y el archivo de requerimientos (requeriments.txt):
+5. Instalar las librerias usando pip y el archivo de requerimientos (requirements.txt):
 
 ```bash
-pip install -r django_mobile_shop/requeriments.txt
+pip install -r django_mobile_shop/requirements.txt
 ```
 
 6. Entramos al directorio src y ejecutar el comando que activa el servidor de desarrollo:
