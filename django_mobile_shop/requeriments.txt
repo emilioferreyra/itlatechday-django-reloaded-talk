@@ -4,7 +4,7 @@ certifi==2018.10.15
 chardet==3.0.4
 curtsies==0.3.0
 diff-match-patch==20181111
-Django==2.1.3
+Django==2.2.27
 django-extensions==2.1.4
 django-import-export==1.1.0
 django-jet==1.0.8
@@ -25,6 +25,7 @@ PyYAML==3.13
 requests==2.20.1
 six==1.11.0
 sorl-thumbnail==12.5.0
+sqlparse==0.4.2
 tablib==0.12.1
 typing==3.6.6
 unicodecsv==0.14.1
